@@ -16,15 +16,8 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "LoggerExtension",
-            swiftSettings: [
-                .unsafeFlags([
-                    "-Xfrontend",
-                    "-warn-long-function-bodies=100",
-                    "-Xfrontend",
-                    "-warn-long-expression-type-checking=100"
-                ])
-            ]),
+            name: "LoggerExtension"
+        ),
         .testTarget(
             name: "LoggerExtensionTests",
             dependencies: ["LoggerExtension"]),
