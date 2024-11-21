@@ -12,6 +12,9 @@ let package = Package(
             name: "LoggerExtension",
             targets: ["LoggerExtension"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/Kajalluthra/Account.git", from: "1.0.0"),
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
